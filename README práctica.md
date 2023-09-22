@@ -24,4 +24,4 @@
 
 12.- git commit -am (Este comando sirve para hacer de manera conjunta los comandos "git add ." y "git commit -m" a un cambio en un archivo al cual git ya le está haciendo seguimiento)
 
-El lenguaje de marcas mas sensillo se conoce como "Mark Down"
+El lenguaje de marcas mas sencillo se conoce como "Mark Down"
