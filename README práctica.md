@@ -22,4 +22,4 @@
 
 11.- git push (Este comando sirve para subir los cambios a Github)
 
-estoy realizando un cambio para comprobar el funcionamiento de las ramas
+12.- git commit -am (Este comando sirve para hacer de manera conjunta los comandos "git add ." y "git commit -m" a un cambio en un archivo al cual git ya le está haciendo seguimiento)
