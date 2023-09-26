@@ -1,4 +1,4 @@
 # LM2324
 
 
-Instalación
+Instalación.
