@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- Esta etiqueta sirve para especificar en que lenguaje estoy programando-->
+<html lang="es" dir="ltr"> 
+    <head>
+    <!-- Esta etiqueta sirve para poder incluir información importante que no se va a ver en la página web (hojas de estilo,
+    archivos javascript externos e internos, iconos, título de la página web (este título si se va a ver))-->
+        
+        <meta charset="UTF-8"/>
+        <!-- Esta etiqueta es importante por algún motivo, pero me permite colocar tildes y carácteres del español-->
+
+        <meta charset="iso-8559-1"/>
+        <!-- Esta etiqueta sirve para poder otorgar un conjunto de carácteres (chino, árabe, español...) con los que se va a trabajar-->
+        <!-- La etiqueta meta de "metainformation" - metainformación. Sirve para aportar información sobre el documento-->
+        <!-- "name" o "content" son atributos opcionales que las etiquetas pueden llevar-->
+
+        <meta name="description" content="Página de HTML 5"/>
+        <!-- Esta etiqueta sirve para que un buscador pueda categorizar mi página web y posicionarla en los resultados de
+        busqueda (ciencia, historia, top, etc...)-->
+
+        <meta name="keywords" content="html5, ccs3"/>
+        <!-- Esta etiqueta sirve para introducir palabras clave, es decir, al buscar una página e introducir una de estas palabras
+        entonces aparecerá mi página en esa busqueda-->
+
+        <title>Mi primera web de html</title>
+        <!-- Esta etiqueta sirve para categorizar mi web. Sirve de la misma manera que "meta name keyword" pero tiene un valor más importante que este
+        puesto que es el nombre oficial de la web en el buscador. Por otra parte, Si abusas de palabras clave dentro del "title" los buscadores penalizan y se produce el efecto
+        contrario al que se quiere conseguir, el cual es tener más visitas o estar mejor posicionado.
+        Por último, la frase de un title debe ser una frase corta, descriptiva y coherente a la tematica de la web-->
+
+        <link rel="stylesheet" href="mihojadeestilos.ccs"/>
+        <!-- Esta etiqueta suele ir después de la etiqueta "title", y sirve para enlazar o incluir documentos adicionales a mi página web (hojas de estilo, docs javascript...)-->
+        <!-- "rel" quiere decir relativo o relacionado e informa de que tipo de archivo se trata el que se agrega a la página web-->
+        <!-- "href" indica la ruta donde está el archivo que vamos a incluir-->
+    </head>
+    <body>
+    <!-- Esta etiqueta sirve para mostrar cosas en la página web. Todo lo que coloque en esta etiqueta aparecerá ahí-->
+    
+        <header>
+        <!-- Esta etiqueta sirve de cabecera donde incluir el logotipo de la empresa, la direccion, informacion muy relevante-->
+
+            <h1>Mi primera web</h1>
+            <!-- Esta etiqueta se utiliza para titulos. El 1 es un atributo que puede ir desde 1 a 6 y lo que cambia es el tamaño del texto (h1 el mas grande, h6 el mas pequeño, pero siempre ira en negrita).
+            Los buscadores toman mucho en cuenta las etiquetas "h", ya que al contener informacion importante la utilizan para categorizar la pagina.
+            Además, las etiquetas "h" sirven para jerarquizar la importancia de los textos (h1=título, h2=subtítulo...).
+            Por último, si se escriben varios títulos y subtítulos se debe usar "h2" en vez de "h1" porque por algún motivo los navegadores al reconocer dos "h1" hacen que el segundo "h1"
+            que se coloque, en este caso el de los títulos de los artículos, sea más pequeño que el de los subtítulos. Y por este motivo, en un artículo se coloca a partir de "h2" en adelante, ya que ya existe un título o cabecera principal en la web -->
+
+        </header>
+        <nav>
+        <!-- Esta etiqueta "navegation" se utiliza para crear una barra de navegación donde incluir menus, pestañas, menus despegables (para navegar por la pagina) -->
+
+            <ul>
+            <!-- Esta etiqueta "unordered list" se utiliza para hacer listas desordenadas. Se dice que es desordenada porque no pone numeros o letras -->
+                
+                <li>quienes somos</li>
+                <li>Nuestro producto</li>
+                <li>Contactanos</li>
+                <!-- Esta etiqueta "list item" se pone para colocar los elementos que se desean poner en la barra de navegación "nav" -->
+
+            </ul>
+        </nav>
+        <aside>
+        <!-- Esta etiqueta se usa para informar al navegador como está estructurado el documento e indicamos que ahí va a haber un contenido de tipo
+        "barra lateral". Se suele usar como barra de vínculos en los que pulsar y que la info se descargue en otra página -->
+
+            <blockquote>Primer elemento</blockquote>
+            <!-- Esta se utiliza para largas citas, dentro de "aside" -->
+        
+        </aside>
+        <section>
+        <!-- Esta se usa para colocar el contenido principal donde esta la informacion mas relevante -->
+        
+            <article>
+            <!-- Esta etiqueta se utiliza para agrupar cualquier tipo de contenido que tenga algo que ver, no tiene que 
+            ser solamente un articulo. Por ejemplo, si en "section" coloco varios párrafos y hay algunos que no tiene que ver con otros, uso "article" para
+            poder establecer en un bloque toda aquella información que guarde relación-->
+
+                <p>Esta es la primera vez que escribo un párrafo</p>
+                <!-- Esta etiqueta "paragraph" se usa para escribir párrafos -->
+                
+            
+            </article>
+            <article>
+                <header>
+                    <hgroup>
+                    <!-- Esta etiqueta se usa para agrupar las "h" de un artículo en concreto. Si solo se coloca una única etiqueta "h" no hace
+                    falta colocar una etiqueta "hgroup" -->
+
+                        <h2>Noticia 1</h2>
+                        <h3>Subtítulo de Noticia 1</h3>
+                    </hgroup>
+                </header>
+                <figure>
+                <!-- Esta etiqueta se usa para se uriliza para insertar elementos que tienen algo que ver con el contenido, pero a la vez
+                son elementos independientes, las imagenes cumplen esa condicion(pueden estar relacionadas con el 
+                contenido, pero son elementos independientes.). La ruta del fichero puede ser absoluta o relativa, además, es mejor no usar carácteres especiales en el nombre porque alomejor el navegador no lo reconoce.
+                Los videos pueden ir dentro de figure. Las imagenes que estan en nuestros documentos web tienen que ser imagenes nuestras o imagenes sin copyrigth. El buscador de google tienen un filtro para imagenes sin derechos de autor.
+                Las imagenes soportadas por paginas web son: jpg, gif, png.(los tres son formato de imagen comprimidos) se utilizan estos formatos porque son comprimidos, esto acelera la descarga.
+                Los formatos gif son muy livianos, lo malo es que solo permiten 256 colores, por ello se utilizan en botones o imagenes pequeñas y basica.(no apto para paisajes).
+                Por otra parte, un png de 8 bits tiene menos colores sin embargo el de 16bits tiene mas colores. Los formatos png y gif permiten tranparencia. jpg no. -->
+                    <img src="c:/users/marco/workspace/imagenes/wallhaven-8o2reo_1920x1080.png" width="1000" height="700"/>
+                    <!-- Esta etiqueta se usa para poder colocar las imagenes dentro de "figure", además, es necesario usar el atributo "src" para colocar la ruta, además de que puedo usar los atributos "width" y "height" para la anchura y altura de la imagen -->
+
+                        <figcaption>
+                        <!-- Esta etiqueta sirve para poder poner un pie de imagen o una descripción debajo de la imagen pertinente -->
+
+                            Foto de Shinji. Evangelion.
+                        </figcaption>
+
+                </figure>
+                    <p><mark>Noticia 1</mark></p>
+                    <!-- La etiqueta "mark" se usa para marcar un texto, sin importancia ni énfasis (de acuerdo a circunstancias del momento) (es un color fosforito)-->
+
+                    <p><em>Seguimos con la noticia 1</em></p>
+                    <!-- La etiqueta "em" se usa para indicar énfasis, y sustituye a la etiqueta "<i></i>" (en realidad es para poner el texto en cursiva)-->
+
+                    <p><strong>Terminamos con la noticia 1</strong></p>
+                    <!-- La etiqueta "strong" se usa para marcar un texto importante (una importancia FUERTE en la página) y para posicionarlo en buscadores (es como poner un texto en negrita) -->
+
+                <footer>
+                    <p><small>Fin de la noticia 1</small></p>
+                    <!-- La etiqueta "small" se usa para presentar textos legales (en realidad coloca un poco más pequeño el texto)-->
+
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h2>Noticia 2</h2>
+                    <time datetime="2014/01/31" pubdate>Noticia publicada el día 26/06/2014</time>
+                    <!-- Esta etiqueta se usa para expresar una fecha y una hora. Además, lleva los atributos "datetimes" y "pubdate" para especificar esta fecha al navegador -->
+
+                </header>
+                    <p><cite>Noticia 2</cite></p>
+                    <!-- La etiqueta "cite" se usa para citar títulos de libros, canciones, películas, trabajos propios... -->
+
+                    <p>Seguimos con la noticia 2</p>
+                    <p>Terminamos con la noticia 2</p>
+                <footer>
+                    <p>Fin de la noticia 2</p>
+                </footer>
+            </article>
+
+        </section>
+        <footer>
+        <!-- Esta etiqueta se usa para colocar información adicional (pie de página). PD: Footer y Header son extremadamente flexibles puesto que
+        no solo sirven para establecer la cabecera y el pie de la página principal, sino que también se utilizan en HTML 5 para definir la cabecera y 
+        el pie otros contenidos de un documento web, por ejemplo, podemos usar ambos para establecer la cabecera y el pie dentro de un bloque de información en el apartado
+        "section", siendo más específicos, dentro de "article" -->
+            
+            <address>Tlf: 677777891</address>
+            <!-- Esta etiqueta se usa para colocar información de contacto. Asimismo, se coloca dentro de la etiqueta "footer". Por otro lado, la etiqueta 
+            "address" lo que hace es crear un "blocklevel", es decir, una etiqueta que lleva un salto de línea antes y después, es decir, un punto y aparte, y además lo pone en cursíva. -->
+
+        </footer>
+
+
+    </body>
+</html>
