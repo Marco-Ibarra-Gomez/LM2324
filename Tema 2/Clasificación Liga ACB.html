@@ -6,7 +6,6 @@
     <title>Clasificación Liga ACB</title>
 <style>
 table{
-    border: 1px;
     width: 650px;
     height: 300px;
     table-layout: fixed;
@@ -17,6 +16,10 @@ table{
 thead, tbody, th, td, tr{
     height: 50px;
     word-wrap: break-word;
+}
+thead{
+    color: white;
+    background-color: #212121;
 }
 .container{
     justify-content: center;
@@ -29,12 +32,11 @@ thead, tbody, th, td, tr{
 .color2{
     color: #706E6D;
 }
-thead{
-    color: white;
-    background-color: #212121;
-}
 .x:hover{
     background-color: #1B1A1A;
+    cursor: pointer;
+}
+.y:hover{
     cursor: pointer;
 }
 .z:hover{
@@ -59,11 +61,7 @@ thead{
                     <td class="x" colspan="3">JUGADORES</td>
                 </tr>
                 <tr>
-<<<<<<< HEAD
-                    <td colspan="12" style="border-left: 1px solid #eaeaea; border-right: 1px solid #eaeaea; font-size: 13px; font-family: Arial; text-align: left; padding-left: 25px; border-bottom: 1px solid #eaeaea; background-color: #f1f3f4;">Temporada<br><b>2023-24</b></td>
-=======
-                    <td colspan="12" style="font-size: 13px; font-family: Arial; text-align: left; padding-left: 25px; border-bottom: 1px solid #eaeaea; background-color: #f1f3f4;"><span style="color: #706E6D;">Temporada</span><br><b>2023-24</b></td>
->>>>>>> d31af312fee605759fac7229af33e3e6db132f56
+                    <td class="y" colspan="12" style="border-left: 1px solid #eaeaea; border-right: 1px solid #eaeaea; font-size: 13px; font-family: Arial; text-align: left; padding-left: 25px; border-bottom: 1px solid #eaeaea; background-color: #f1f3f4;"><span style="color: #706E6D;">Temporada</span><br><b>2023-24</b></td>
                 </tr>
                 <tr class="color2" style="border-left: 1px solid #eaeaea; border-right: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea; font-size: 12px; font-family: Arial;">
                     <td colspan="6" style="text-align: left; padding-left: 18px;">Equipo</td>
@@ -96,7 +94,7 @@ thead{
                     <td>320</td>
                     <td>26</td> 
                 </tr>
-                <tr class="z" style="border-left: 1px solid #eaeaea; border-right: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea; font-size: 14px; font-family: Arial;">
+                <tr class="z" style="border-left: 1px solid #eaeaea; border-right: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea; font-size: 14px; font-family: Arial;"> 
                     <td style="text-align: right;">3</td>
                     <td><a href="https://basquetgirona.com/senior/cat/.html" target="_blank"><img width="25px" height="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAA3NCSVQICAjb4U/gAAAA+VBMVEVHcEz+1k3/W1ocP2MXNFEaPF0rYJUULkj/WVgOIDIPIjUeRGlJpP8YN1YNHS5Cl///WVlJpP9Jpf8NHzH/qlL/1k7/Wlk7hM0RKD8WMU1Eov/bTk3/107/107/107/105Kpv8TK0P/W1r/UFBIpf8jT3sycrH/Tk8QJTr/2E7/VlX/107/W1r/107/103/XFv/W1r/WFf+T1D/107zzEr/W1r/107pU1L/XFv/uVH/W1r/Vlb/W1pEme3/1k7pQUP/1k7/107/W1r/T1D/VVW4MzT/1k7/1k3/W1qwMTP/W1r/W1r/103xVlUAAAANHS3RS0row0epMDE57gKBAAAAT3RSTlMA6Vt0jHpNngLh1mwjhPgJmikc6wcrJji1lRf10yGR4BCqv0oDXUEaw2o/dHanQFJpg6jD9QyD5UY80hBiMFe6ObW1M4zrURHG9c7KD94ZLs6y0gAAAzNJREFUSInVlVlT4kAQgBtCTkIOAuRAuQQERBQUtbyv9dzdzvD/f8z2JClMBUT3aWv7YcjM9NfX9AwA/4fkZ6f5Sr0zvviWtmKFJHmFj2+1byE1Kwbq+crXygeWNa7BGQdOafZoTTfrn/FAQgteLpXwoZJMNkik0hmPYEoAzM+m5zTf2QB0wvcDngRYBCgXPOXD03C9bT7UXnZJ4y08hDrlQGPYyQOMRkuFpWznGMtNOHJPMUxhHFUJiKAc5gATvr+dAobs+JZ+djs8h0M4iMtKZeI5hDPauj1mww99pcH2+W9UlRrZTw6uPodHvnRGe3eskfJwFM3m9+f1Ds98edJUoRGNvBANdpcCtthJ/PGb0rgcW/fnO0pYr/9679RgHnfUCdtKAU22B6ZkAuhOd10Nr1zYY83UQo6AMuIAoCQBtFrxahf0liu2JRVRJCCX8RAgYDlABAmx0OU02o4kq4Le0oqQ8cBzCLBAyg6CqAa+hF3idVWSZdrWBJ70UQq4o7IG6BlQKmAfjAFIRisBELsRsB9XPpEGlYCH5HqeI5R1rS0ZJo8w5WFZyEiuGSPAx7Iha56o+qqLPQIEdNua6IIqAjB2nQK2GXs2fV+CNrgFkD0bSp7j9gcl6MntPoh9eGYs3UuQq64rf1qqucyCb6gu9Bw7UDXNB5BUo03Bq0FRBehrqpk10ENPRSjiVYADGYuAWhFLQCcmIp0mopsF6AxEDthlFEwUTa4tE0AcgGeQiRXALPdjwBewb2IhAjQqHYAjo7wK2E7iAdHothKgYBgEYFHVVgGdchA4ULR5VHFIvk/NpdNx4PocBNR1FAJqTvRsDshXBPRwoK0D5AQQy2SeCmOUAduUN+21HbzKAEUKvQA9r2VKAbT4LeKVt21agoFBUfWyLkpyP7uUki51yao8V6m/aq8L2F0sduB1cQOPC3qLr6s/PzFTZfyijxLgBwGzG97X7NNGi4kHZQk8bNaPiBw9oglAL14lt1FfUehisFuAC2sEM3rmJyxzDVal0mQfl3efsebX/1oNshq9u0P6aHylzWWbnBwPh8dk/otwlvJEqVL6T99U5zI5Opr8hfq/lT8RxZevJ9mKYQAAAABJRU5ErkJggg==" alt="Bàsquet Girona"></a></td>
                     <td colspan="4" style="text-align: left;">Bàsquet Girona</td>
