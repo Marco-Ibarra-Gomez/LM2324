@@ -4,6 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de pago</title>
+<style>
+    .x{
+        background-color: #F7F7F7;
+        border: 1px solid #D5D5D5;
+        transition-duration: background-color;
+        color: #707070;
+    }
+    .x:hover{
+        background-color: white;
+        border-color: #A8D2EE;
+    }
+    fieldset{
+        border: 1px solid #D5D5D5;
+    }
+    .pago{
+        background-color: black;
+        border: 1px solid black;
+        color: white;
+    }
+    .pago:hover{
+        background-color: #007ACC;
+        border-color: #007ACC;
+    }
+    form{
+        width: 800px;
+    }
+    body{
+        font-size: 20px;
+    }
+</style>
 </head>
 <body>
 <form>
@@ -13,23 +43,56 @@
         </header>
         <fieldset>
             <legend style="font-weight: bold;">Información de contacto</legend>
+            <p>
             <fieldset>
-                <legend>Profesión</legend>
-                <p>
-                    <label><input type="radio" name="Profesión">Profesor/a</label><br>
-                    <label><input type="radio" name="Profesión">Estudiante</label><br>
-                    <label><input type="radio" name="Profesión">Otro</label><br>
-                </p>
+            <legend>Profesión</legend>
+            <p>
+                <label><input type="radio" name="profesión">Profesor/a</label><br>
+                <label><input type="radio" name="profesión">Estudiante</label><br>
+                <label><input type="radio" name="profesión">Otro</label><br>
+            </p>
             </fieldset>
+            </p>
+            <p>
             <fieldset>
-                <legend>Tratamiento</legend>
-                <p>
-                    <label><input type="text" name=""></label>
-                </p>
+            <legend>Tratamiento</legend>
+            <p>
+                <label><input type="radio" name="tratamiento">Sr/Sra</label><br>
+                <label><input type="radio" name="tratamiento">Dr/Dra</label><br>
+                <label><input type="radio" name="tratamiento">Otro</label>
+            </p>
             </fieldset>
-        </fieldset>
+            </p>
+            <label>Nombre:*<br><input type="text" name="nombre" required class="x"></label><br>
+            <label>Correo:*<br><input type="email" name="email" required class="x"></label><br>
+            <label>Número de teléfono:*<br><input type="text" name="teléfono" required class="x"></label><br>
+            <label>Contraseña:*<br><input type="password" name="Contraseña" required class="x"></label><br>
+        </fieldset><br>
+        <fieldset>
+        <legend style="font-weight: bold;">Información de pago</legend>
+        <p>
+            <label>Tipo de tarjeta:
+                <select name="tarjeta">
+                    <option value="visa" selected>Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="american_express">American Express</option>
+                </select>
+            </label>                
+        </p>
+        <p>
+            <label>Número de tarjeta:*<br><input type="text" name="número" required class="x"></label><br>
+            <label>Fecha de caducidad:*<br><input type="date" name="fecha" required class="x"></label><br>
+            <label>Cuenta de paypal:*<br><input type="text" name="paypal" required class="x"></label><br>
+        </p>
+        <label>Método de pago preferido:
+            <select name="método_de_pago">
+                <option value="tarjeta_de_crédito" selected>Tarjeta de crédito</option>
+                <option value="paypal">Paypal</option>
+            </select>
+        </label>
+        </fieldset><br>
+        <input style="font-size: 15px; padding: 10px; font-weight: bold; cursor: pointer;" type="submit" value="VALIDAR EL PAGO" class="pago">
     </fieldset>
-</form>
-    
+</form>   
 </body>
 </html>
