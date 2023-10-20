@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form1</title>
 
     <style>
         #conector1{background-color: lightgrey; cursor: pointer;}
@@ -16,18 +16,21 @@
 <form action="">
     <fieldset>
         <legend>Rellenar</legend>
-            <input type="radio" name="idioma" value="idiomainglés" class="casilla">Ingles <br>
-            <input type="radio" name="idioma" value="idiomaalemán" class="casilla">Alemán <br>
-            <input type="radio" name="idioma" value="idiomafrancés" class="casilla">Francés <br><br>
+            <input type="radio" name="idioma" value="idiomainglés" class="casilla" id="idioma_1">
+                <label for="idioma_1">Ingles</label><br>
+            <input type="radio" name="idioma" value="idiomaalemán" class="casilla" id="idioma_2">
+                <label for="idioma_2">Alemán</label><br>
+            <input type="radio" name="idioma" value="idiomafrancés" class="casilla" id="idioma_3">
+            <label for="idioma_3">Francés</label><br><br>
         <select name="conector" id="conector1">
             <option value="usb">USB</option>
             <option value="paralelo">Paralelo</option>
             <option value="ps2">PS2</option>
         </select><br><br>
-        <label for="nombre">Nombre</label><br>
-            <input type="text" name="nombre" id="nombre"><br><br>
-        <label for="apellido">Apellidos</label><br>
-            <input type="text" name="apellidos" id="apellido"><br>
+        <label for="nombre_">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre_"><br><br>
+        <label for="apellidos_">Apellidos</label><br>
+            <input type="text" name="apellidos" id="apellidos_"><br>
     </fieldset><br>
     <fieldset>
         <legend>Indique sus preferencias por favor</legend>
@@ -35,10 +38,12 @@
             <option value="hombre">Hombre</option>
             <option value="mujer">Mujer</option>
         </select><br><br>
-        <input type="checkbox" name="sexo" value="sexohombre" id="">
-            <label for=""></label>
-        <input type="checkbox" name="sexo" value="sexomujer" id="">
-            <label for=""></label>
+        <input type="checkbox" name="sexo" value="sexohombre" id="hombre_">
+            <label for="hombre_">Hombre</label><br>
+        <input type="checkbox" name="sexo" value="sexomujer" id="mujer_">
+            <label for="mujer_">Mujer</label><br><br>
+        <label for="fecha_">Elija una fecha:</label>
+        <br><input type="date" name="fecha" id="fecha_">
     </fieldset>
 </form>
     
