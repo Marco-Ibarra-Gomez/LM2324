@@ -192,7 +192,6 @@
             height: 400px;
             position: absolute;
             z-index: 4;
-            border: 2px solid black;
         }
         #columpio1{
             background-color: black;
@@ -473,8 +472,8 @@
             position: absolute;
             background-color: white;
             z-index: 1;
-            top: 170px;
-            left: 800px;
+            top: 180px;
+            left: 900px;
             border-bottom-left-radius: 80px;
             border-top-left-radius: 80px;
             border-bottom-right-radius: 80px;
@@ -486,8 +485,8 @@
             position: absolute;
             background-color: white;
             z-index: 1;
-            top: 152px;
-            left: 850px;
+            top: 162px;
+            left: 950px;
             border-bottom-left-radius: 80px;
             border-top-left-radius: 80px;
             border-bottom-right-radius: 80px;
@@ -500,8 +499,8 @@
             position: absolute;
             background-color: white;
             z-index: 1;
-            top: 100px;
-            left: 895px;
+            top: 110px;
+            left: 995px;
             border-radius: 100%;  
         }
         #chimenea{
@@ -513,6 +512,84 @@
             top: 64px;
             left: 890px;
             border: 2px solid black;
+        }
+        #planta1{
+            background-color: #1E6410;
+            border-radius: 100px;
+            top: 70px;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            z-index: 4;
+            transform: rotate(45deg);
+        }
+        #planta2{
+            background-color: #1E6410;
+            border-radius: 100px;
+            top: 90px;
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            z-index: 4;
+            transform: rotate(90deg);
+            left: 40px;
+        }
+        #planta3{
+            background-color: #1E6410;
+            border-radius: 100px;
+            top: 70px;
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            z-index: 4;
+            transform: rotate(45deg);
+            left: 120px;
+        }
+        #rama{
+            background-color: #641F10;
+            width: 15px;
+            height: 80px;
+            z-index: 3;
+            position: absolute;
+            top: 550px;
+            border: 2px solid black;
+            left: 155px;
+            transform: rotate(-45deg);
+        }
+        #hoja{
+            width: 0;
+            height: 0;
+            z-index: 4;
+            position: absolute;
+            top: 540px;
+            left: 110px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            border-bottom: 30px solid green;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            transform: rotate(120deg);
+        }
+        #black{
+            background-color: black;
+            width: 2px;
+            height: 8px;
+            top: 558px;
+            left: 131px;
+            transform: rotate(120deg);
+            position: absolute;
+            z-index: 4;
+        }
+        #entrada{
+            height: 0;
+            width: 0;
+            border-right: 300px solid transparent;
+            border-bottom: 325px solid lightgrey;
+            border-left: 300px solid transparent;
+            z-index: 1;
+            top: 626px;
+            left: 402px;
+            position: absolute;
         }
     </style>
 </head>
@@ -566,4 +643,11 @@
     <div id="nubex2"></div>
     <div id="nubex3"></div>
     <div id="chimenea"></div>
+    <div id="planta1"></div>
+    <div id="planta2"></div>
+    <div id="planta3"></div>
+    <div id="rama"></div>
+    <div id="hoja"></div>
+    <div id="black"></div>
+    <div id="entrada"></div>
 </body>
