@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript ejercicio circulos</title>
+    <style>
+        .container{
+            display: flex;
+            height: 90px;
+            width: 500px;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        #circulorojo{
+            height: 90px;
+            width: 90px;
+            border-radius: 100px;
+            background-color: red;
+        }
+        #circuloverde{
+            height: 90px;
+            width: 90px;
+            border-radius: 100px;
+            background-color: green;
+        }
+        #circuloazul{
+            height: 90px;
+            width: 90px;
+            border-radius: 100px;
+            background-color: blue;
+        }
+
+        .container2{
+            display: flex;
+            height: 90px;
+            width: 515px;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        #ocultarrojo{
+            height: 50px;
+            width: 100px;
+            background-color: white;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+        #ocultarverde{
+            height: 50px;
+            width: 100px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        #ocultarazul{
+            height: 50px;
+            width: 100px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .container3{
+            display: flex;
+            height: 90px;
+            width: 515px;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        #mostrarrojo{
+            height: 50px;
+            width: 100px;
+            background-color: white;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+        #mostrarverde{
+            height: 50px;
+            width: 100px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        #mostrarazul{
+            height: 50px;
+            width: 100px;
+            background-color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Utilidades de Javascript</h1>
+    <main class="container">
+        <div id="circulorojo"></div>
+        <div id="circuloverde"></div>
+        <div id="circuloazul"></div>
+    </main>
+    <main class="container2">
+        <button type="button" id="ocultarrojo" onclick="document.getElementById('circulorojo').style.visibility='hidden'">Ocultar rojo</button> 
+        <button type="button" id="ocultarverde" onclick="document.getElementById('circuloverde').style.visibility='hidden'">Ocultar verde</button> 
+        <button type="button" id="ocultarazul" onclick="document.getElementById('circuloazul').style.visibility='hidden'">Ocultar azul</button> 
+    </main>
+    <main class="container3">
+        <button type="button" id="mostrarrojo" onclick="document.getElementById('circulorojo').style.visibility='visible'">Ocultar rojo</button> 
+        <button type="button" id="mostrarverde" onclick="document.getElementById('circuloverde').style.visibility='visible'">Ocultar verde</button> 
+        <button type="button" id="mostrarazul" onclick="document.getElementById('circuloazul').style.visibility='visible'">Ocultar azul</button>
+    </main>
+</body>
+</html>
