@@ -6,6 +6,24 @@
     <title>Ejercicio 2 (Javascript 9)</title>
 </head>
 <body>
+    <h1>Cambios de euros a dólares y viceversa</h1>
+    <label for="euros">Euros a dólares</label><br>
+        <input type="number" name="euros" id="eurodolar">
+        <button type="button" onclick="conversion1()">Convertir</button><br><br>
+    <label for="dólares">Dólares a euros</label><br>
+        <input type="number" name="euros" id="dolareuro">
+        <button type="button" onclick="conversion2()">Convertir</button>
 
+    <script>
+        function conversion1(valNum){
+            var a = 0.94;
+            var b = 1;
+            var conversion;
+            conversion = ( a = b );
+            alert(conversion);
+        }
+        function conversion2(valNum){
+        }
+    </script>
 </body>
 </html>
