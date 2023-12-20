@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Básicos</title>
+    <script>
+       /* 
+        var precio_unidad, cantidad, total; // Si el nombre de una variable está formado por dos palabras, se separan mediante barra baja o la segunda palabra comienza con mayúsculas
+        precio_unidad = 5;
+        cantidad = 100;
+        total = precio_unidad*cantidad;
+
+        alert("El importe total de la compra es: " + total + "€");
+        */ 
+    
+        // Esto es un código de un ejercicio de ejemplo //
+        
+        var camisetas, pantalones, articulos;
+        camisetas = "5"; // Si coloco el 5 entre comillas, la variable no será de tipo numerica, sino de string, y esto puede ocasionar errores con el operador "+"
+        pantalones = 5;
+        articulos = Number (camisetas) + pantalones;
+        alert(articulos); // Me sale 55, ya que está concatenando los 5 (el string y el numérico). Para arrerglarlo se quitan las comillas, o se usa la función predefinida "Number()"
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

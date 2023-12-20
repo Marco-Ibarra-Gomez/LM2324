@@ -1,0 +1,78 @@
+<Funciones predefinidas>: son funciones que vienen con Javascript (alert, document.write., isNaN...)
+<Funciones propias>: funciones que creo yo (se pueden combinar con funciones predefinidas).
+
+Tipos de datos: se dividen en 3 Tipos
+    - <Números>: Son los números, decimales o enteros.
+    - <Strings>: Son valores de texto (hacemos referencia a un texto) y debe ir siempre entre comillas dobles o simples ("" '').
+    - <Booleanos>: Tienen que ser True o False (no hay más posibilidades).
+
+Los tipos de datos están relacionados con las variables. Una <variable> es "un espacio en la memoria del ordenador (RAM)
+donde se almacenará un valor que podrá cambiar durante la ejecución del programa".
+Para declarar una variable hay que usar "var" y a continuación el nombre de la variable, por ejemplo: "var puntuación;".
+
+Para dar <nombre a una variable> hay que seguir las siguientes reglas:
+    - La variable comienza por letra, símbolo $ o _ (puntuacion, $puntuacion, _puntuacion)
+    - Contiene solo letras, números, $ y _ (puntuacion1, puntuacion_1, ...)
+    - Son case sensitive (distingue entre mayúsculas y minúsculas) (por ejemplo, Puntuacion y puntuacion no son iguales)
+    - No deben ser palabras reservadas (estas son palabras que forman parte del lenguaje, por ejemplo: alert, var, ... y no se pueden declarar de la forma "var alert;")
+    - Son descriptivas
+
+Las variables se pueden declarar en distintas lineas o en una misma linea como se ven en los siguientes 4 ejemplos:
+    <script>
+        var puntuacion,record,jugador;
+        var puntuacion = 0,record = 5000,jugador = "Juan";
+    </script>
+
+O también se puede hacer esto:
+    <script>
+        var puntuacion;
+        puntuacion = 0;
+
+        var puntuacion = 0;
+    </script>
+
+
+Tipos de <operadores> en Javascript:
+    - Básicos: 
+        (+): realiza una operación de suma (también se usa para concatenar/unir dos valores, un string y un valor numérico)
+        (-): realiza una operación de resta
+        (*): realiza una operación de multiplicación
+        (/): realiza una división
+
+Existen <dos tipos de funciones>:
+    - De entrada de datos (prompt): permite introducir datos desde fuera del programa a dentro del programa y almacenarse en una variable.
+    - De salida de datos(alert): Con este, la información de una variable es capaz de salir del programa hacia fuera en forma de ventana para que la vea el usuario.
+
+<Operadores de incremento y decremento>:
+    (+=): Incrementa en X el valor de una variable
+    (-=): Decremenmta en X el valor de una variable
+    (*=): Multiplica en X el valor de una variable
+    (/=): Divide en X el valor de una variable
+    (++): Incrementa en 1 el valor de una variable
+    (--): Decrementa en 1 el valor de una variable
+
+Los <Arrays> se usan para reservar varios espacios en la RAM del PC donde iremos almacenando sucesivamente valores, además, esos espacios están unidos o empaquetados en una array.
+Un Array es una gran variable donde se almacenan varios valores. En vez de permitir guardar en una variable un valor, permite guardar un grupo de valores (es como un archivador).
+Se declara de la siguiente manera:
+    <script>
+        var articulos = ["zapatillas", "pantalón", "camiseta", "calcetines"];
+
+        // O mediante el siguiente método //
+
+        var articulos = new Array("zapatillas", "pantalón", "camiseta", "calcetines");
+
+    </script>
+
+Para <acceder a los elementos de un Array> los elementos del Array están identificados con los "Índices o posición", teniendo en cuenta que el primer índice de un array
+comienza en [0]. Por ejemplo, si tengo un array de 4 elementos, el 4 elemento es el [3] (siempre es uno menos). Para acceder a lo que hay en un índice del Array
+hay que escribir el nombre del array y luego la posición.
+    <script>
+        alert(articulos[1]);
+    </script>
+
+Las <propiedades y métodos> son herramientas para manipular un Array:
+    - Length: Nos dice la longitud o número de elementos que tiene un array (articulos.length = 4;)
+    - Push: Nos permite agregar elementos al array como al final
+    - Unshift: Nos permite agregar elementos al array al principio
+    - Pop: Nos permite eliminar elementos al final del array
+    - Shift: Nos permite eliminar elementos al principio del array
