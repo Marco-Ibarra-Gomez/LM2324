@@ -45,7 +45,7 @@ Existen <dos tipos de funciones>:
 
 <Operadores de incremento y decremento>:
     (+=): Incrementa en X el valor de una variable
-    (-=): Decremenmta en X el valor de una variable
+    (-=): Decrementa en X el valor de una variable
     (*=): Multiplica en X el valor de una variable
     (/=): Divide en X el valor de una variable
     (++): Incrementa en 1 el valor de una variable
@@ -63,8 +63,8 @@ Se declara de la siguiente manera:
 
     </script>
 
-Para <acceder a los elementos de un Array> los elementos del Array están identificados con los "Índices o posición", teniendo en cuenta que el primer índice de un array
-comienza en [0]. Por ejemplo, si tengo un array de 4 elementos, el 4 elemento es el [3] (siempre es uno menos). Para acceder a lo que hay en un índice del Array
+Para <acceder a los elementos de un Array> los elementos del Array están identificados con los "Índices o posiciónes", teniendo en cuenta que el primer índice de un array
+comienza en [0]. Por ejemplo, si tengo un array de 4 elementos, el 4to elemento es el [3] (siempre es uno menos). Para acceder a lo que hay en un índice del Array
 hay que escribir el nombre del array y luego la posición.
     <script>
         alert(articulos[1]);
@@ -72,7 +72,48 @@ hay que escribir el nombre del array y luego la posición.
 
 Las <propiedades y métodos> son herramientas para manipular un Array:
     - Length: Nos dice la longitud o número de elementos que tiene un array (articulos.length = 4;)
-    - Push: Nos permite agregar elementos al array como al final
+    - Push: Nos permite agregar elementos al array al final
     - Unshift: Nos permite agregar elementos al array al principio
     - Pop: Nos permite eliminar elementos al final del array
     - Shift: Nos permite eliminar elementos al principio del array
+
+<Programación orientada a objetos>: Todos los objetos tienen características (ancho, alto, calor, ...) y capacidades (sostener objetos, lavar ropa, arrancar, ...).
+Como tal, no son característicias y capacidades, sino propiedades y métodos, respectivamente:
+    - Propiedades: Cómo es el objeto (ejemplo: style.width, boton.focus, window.alert, ...)
+    - Métodos: Qué puede hacer el objeto (ejemplo: getElementById, ...)
+
+A los diferentes objetos se les conoce como "Instancia".
+
+Las <estructuras de control de flujo> dotan de inteligencia a las páginas web. Estas modifican el flujo de ejecución de un programa de JavaScript.
+Hay dos tipos:
+    - Condicionales: Consisten en tomar decisiones, sin embargo, es el código el que las toma en función de una condición. Utilizamos la instrucción "If".
+    Si la respuesta a la condición es "True" o "False", entonces se seguirán unas u otras instrucciones.
+    <script>
+        if(condicion){
+            // Código a ejecutar si la condición es verdad
+        }
+
+        //El caso siguiente es en la situación de que no sea verdad pero se quiera que se sigan unas instrucciones
+
+        if(condicion){
+
+        }
+        else{
+            // Código a ejecutar si la condición no es verdad
+        }
+    </script>
+
+Para construir la condición tenemos que usar "operadores":
+    - <Operadores de comparación>: 
+        (==): igual que
+        (!=): diferente que
+        (>): mayor que
+        (<): menor que
+        (>=): mayor o igual que
+        (<=): menor o igual que
+        (===): Estrictamente igual que
+        (!==): Estrictamente diferente que
+    
+    - <Operadores lógicos>:
+        &&: Y lógico
+        ||: O lógico

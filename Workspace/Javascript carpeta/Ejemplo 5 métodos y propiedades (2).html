@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores y prompt</title>
+</head>
+<body>
+   <input type="button" value="" id="button1">
+   <input type="button" value="" id="button2">
+   <input type="text" name="cuadrotexto" id="cuadro_texto">
+   <script>
+        var boton = document.getElementById("button1");
+        boton.style.width = "150px";
+        boton.style.height = "150px";
+        boton.style.backgroundColor = "";
+
+        var boton2 = document.getElementById("button2");
+        boton2.style.width = "150px";
+        boton2.style.height = "150px";
+        boton2.focus();
+
+        var cuadroTexto = document.getElementById("cuadro_texto");
+        cuadroTexto.style.backgroundColor  = "red";
+        cuadroTexto.value = "Escriba aquí...";
+        cuadroTexto.style.color = "white";
+   </script>
+</body>
+</html>
