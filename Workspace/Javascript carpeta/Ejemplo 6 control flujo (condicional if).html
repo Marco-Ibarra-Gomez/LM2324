@@ -9,12 +9,13 @@
     <script>
         var precioCoche = "60000";
         var dineroAhorrado = prompt("Introduzca el dinero ahorrado");
+        var edad = prompt("Introduce tu edad");
         
-        if(dineroAhorrado>=precioCoche){
+        if(dineroAhorrado >= precioCoche && edad >= 18){
             alert("Puedes comprar el coche");
         }
         else{
-            alert("No puedes comprar el coche. Falta dinero");
+            alert("No puedes comprar el coche. Falta dinero o eres menor de edad");
         }
 
         alert("Continuamos con la ejecución del programa");

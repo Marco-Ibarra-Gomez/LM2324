@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script>
+        var num1 = Number(prompt("Introduce el primer número")); // El prompt almacena todos los datos como strings, por lo que para colocar un número, es mejor incresar el "prompt" dentro de la función "Number()"
+        var num2 = Number(prompt("Introduce el segundo número"));
+        alert(typeof(num1)); // Typeof() se usa para conocer que tipo de dato está almacenado (string, number, booleano).
+        var operacion = prompt("Introduce la operación a realizar. Suma/Resta/Multiplicación/División").toLowerCase();
+        if(operacion == "suma"){
+            alert(parseInt(num1) + parseInt(num2)); // Puedo usar el ParseInt para que las strings se vuelvan numbers en una variable en concreto, aparte de poder usar Number().
+        }
+        else if(operacion=="resta"){
+            alert(num1 - num2);
+        }
+        else if(operacion=="multiplicación"){
+            alert(num1 * num2);
+        }
+        else if(operacion=="división"){
+            alert(num1 / num2);
+        }
+        else{
+            alert("La operación escogida no está entre las opciones");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

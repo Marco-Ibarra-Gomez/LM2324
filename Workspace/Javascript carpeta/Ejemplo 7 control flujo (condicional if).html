@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Control de flujo If 2</title>
+<style>
+table{
+	margin:auto;
+}
+</style>
+</head>
+
+<body id="cuerpo">
+<form name="form1" method="post" action="" id="miformulario">
+  <table width="25%" border="1" id="mitabla">
+    <tr>
+      <td>Nombre:</td>
+      <td><label for="textfield"></label>
+      <input type="text" name="textfield" id="textfield"></td>
+    </tr>
+    <tr>
+      <td>Apellidos:</td>
+      <td><input type="text" name="textfield2" id="textfield2"></td>
+    </tr>
+    <tr>
+      <td>Edad:</td>
+      <td><input type="text" name="textfield3" id="textfield3"></td>
+    </tr>
+    <tr>
+      <td>Carnet:</td>
+      <td><input type="text" name="textfield4" id="textfield4"></td>
+    </tr>
+    <tr>
+      <td><input type="submit" name="button" id="button" value="Enviar"></td>
+      <td><input type="reset" name="button2" id="button2" value="Restablecer"></td>
+    </tr>
+  </table>
+</form>
+    <script>
+        var cuerpo = document.getElementById("cuerpo");
+        var colorWeb = prompt("Escoge entre los siguientes colores. Azul/Rojo/Verde").toLowerCase(); // El toLowerCase o el toUpperCase nos permite hacer que el prompt esté siempre en mayúsculas o en minúsculas. Con ello, lo que se consigue es que los valores se acepten esten como estén escritos en mayúsculas, o minúsculas, etc...
+        if(colorWeb=="azul"){
+            cuerpo.style.backgroundColor = "blue";
+        }
+        else if(colorWeb=="rojo"){  // else if se usa en caso de que se quieran colocar más opciones de If, sin embargo, es necesario usarlo así en caso de que la respuesta sea incorrecta, para que el "else" funcione en todo momento. PD para mí: usalo, no le des muchas vueltas.
+            cuerpo.style.backgroundColor = "red";
+        }
+        else if(colorWeb=="verde"){
+            cuerpo.style.backgroundColor = "green";
+        } // PD: Si uso LowerCase, tengo que colocar los valores de los condicionales como corresponda, en este caso, en minúsculas (azul, verde, rojo). Si fuera UpperCase (AZUL, VERDE, ROJO).
+        else{
+            alert("El color introducido no corresponde a uno de los proporcionados");
+            colorWeb = prompt("Escoge entre los siguientes colores. Azul/Rojo/Verde");
+            if(colorWeb=="Azul"){
+            cuerpo.style.backgroundColor = "blue";
+            }
+            else if(colorWeb=="Rojo"){
+                cuerpo.style.backgroundColor = "red";
+            }
+            else if(colorWeb=="Verde"){
+                cuerpo.style.backgroundColor = "green";
+            }
+        }
+    </script>
+</body>
+</html>
