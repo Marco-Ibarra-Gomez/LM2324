@@ -1,0 +1,11 @@
+.flex-container{
+    display: flex;
+    background-color: antiquewhite;
+}
+.flex-container div{
+    background-color: chocolate;
+    margin: 5px;
+    width: 50px;
+    color: white;
+    text-align: center;
+}

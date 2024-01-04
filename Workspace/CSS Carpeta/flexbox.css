@@ -1,0 +1,20 @@
+.flex-container{
+    display: flex;
+    background-color: burlywood;
+    padding: 10px;
+    height: 300px;
+    border: 2px solid black;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.flex-container div{
+    background-color: gainsboro;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid black;
+}
