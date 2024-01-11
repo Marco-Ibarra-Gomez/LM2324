@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript 9 (ejercicio 1.2)</title>
+</head>
+<body>
+    <header>
+        <h1>Ejercicio 9 (1.2)</h1>
+    </header><br>
+    <label for="">Usuario</label><br>
+    <input type="text" id="usuario"><br><br>
+    <label for="">Contraseña</label><br>
+    <input type="text" id="contraseña"><br><br>
+    <input type="submit" value="Validar" onclick="ingresar()">
+<script>
+    function ingresar(){
+        var usuario = document.getElementById("usuario").value;
+        var contraseña = document.getElementById("contraseña").value;
+        alert("Bienvenido/a: " + usuario + " " + contraseña);
+    }
+</script>
+</body>
+</html>
