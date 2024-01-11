@@ -1,0 +1,81 @@
+.container{
+    display: flex;
+    height: 90px;
+    width: 500px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#circulorojo{
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: red;
+}
+#circuloverde{
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: green;
+}
+#circuloazul{
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    background-color: blue;
+}
+
+.container2{
+    display: flex;
+    height: 90px;
+    width: 515px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#ocultarrojo{
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#ocultarverde{
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+#ocultarazul{
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container3{
+    display: flex;
+    height: 90px;
+    width: 515px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#mostrarrojo{
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#mostrarverde{
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+#mostrarazul{
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
