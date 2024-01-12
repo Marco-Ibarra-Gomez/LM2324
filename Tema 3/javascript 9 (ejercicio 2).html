@@ -16,13 +16,16 @@
 
     <script>
         function conversion1(valNum){
-            var a = 0.94;
-            var b = 1;
-            var conversion;
-            conversion = ( a = b );
-            alert(conversion);
+            var euro = parseFloat(document.getElementById("eurodolar").value);
+            var dolar = 0.91;
+            var conversion = euro * dolar;
+            alert("La conversión es igual a " + conversion + " euros");
         }
         function conversion2(valNum){
+            var dolares = parseFloat(document.getElementById("dolareuro").value);
+            var euros = 1.09;
+            var conversion_2 = dolares * euros;
+            alert("La conversión es igual a " + conversion_2);
         }
     </script>
 </body>
