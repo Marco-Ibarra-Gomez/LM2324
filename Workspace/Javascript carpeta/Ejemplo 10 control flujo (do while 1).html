@@ -23,10 +23,10 @@
                 edad = prompt("Introduce una edad válida")
             }while(edad<=0 || edad>105 || isNaN(edad));
             
-        poblacion = prompt("Introduce tu población por favor", "Población");
-        while(!isNaN(poblacion)){
+            do{
                 poblacion = prompt("Introduce una población válida");
-            }
+            }while(!isNaN(poblacion));
+                
     </script>
 </head>
 <body>

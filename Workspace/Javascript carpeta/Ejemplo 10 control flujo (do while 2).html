@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control flujo do while 2</title>
+</head>
+<body>
+    <script>
+        var aleatorio = Math.round(Math.random()*100); 
+            // Math.random genera un número aleatorio entre 0 y 1 con decimales
+            // Math.round redondea un número con decimales (es útil usarlo con Math.random)
+        var minum, intentos;
+        minum = 0;
+        intentos = 0;
+
+        do{
+            minum = prompt("Introduce un nº entero entre 0 y 100");
+            
+            if(aleatorio>minum){
+                document.write("<p>" + "El número ingresado es más bajo que el aleatorio" + "<br></p>");
+            }
+            if(aleatorio<minum){
+                document.write("<p>" + "El número ingresado es más alto que el aleatorio" + "<br></p>");
+            }
+            intentos++;
+        }while(aleatorio != minum);
+        document.write("¡Correcto! Has realizado " + intentos + " intentos.");
+    </script>
+    
+</body>
+</html>

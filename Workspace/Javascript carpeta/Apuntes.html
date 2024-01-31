@@ -123,7 +123,7 @@ Existen dos tipos de bucles:
     - Determinados: Sin llegar a ejecutar el programa se sabe cuantas veces va a repetir esas líneas de código (<For>).
     - Indeterminados: Van a repetir un número de líneas, pero sin ejecutar el programa no se sabe cuantas veces lo harán (<while> y <Do while>).
 
-El <while> se usa de la siguiente manera:
+El <bucle> "While" es un bucle indeterminado que tiene la siguiente sintaxis:
 <script>    
     while(condición){
         // Código a repetir mientras la condición de bucle sea cierta. En cuanto esa condición deje de ser cierta, el While dejará de repetir el código (las reglas son las mismas que las del if)
@@ -131,7 +131,7 @@ El <while> se usa de la siguiente manera:
         // Continuación del programa
 </script>
 
-El <bucle> "Do while" tiene la siguiente sintaxis:
+El <bucle> "Do while" es un bucle indeterminado que tiene la siguiente sintaxis:
     <script>
         do{
             // Código a repetir mientras la condición del bucle sea cierta
@@ -139,3 +139,12 @@ El <bucle> "Do while" tiene la siguiente sintaxis:
                           // En el Do while, aunque la condición sea falsa, el código se llegará a ejecutar aunque sea una vez.
             //Continuación del programa
     </script>
+
+El <bucle> "For" es un bucle determinado que tiene la siguiente sintaxis:
+    <script>
+        for(inicio;condición;incremento/decremento){
+            // Código a repetir mientras la condición del bucle sea cierta
+        }
+            // Continuación del programa
+    </script>
+El bucle "for" se divide en las 3 zonas que aparecen en "()" llamadas inicio, condición y I/D.
