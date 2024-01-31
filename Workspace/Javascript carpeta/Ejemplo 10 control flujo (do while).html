@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 9</title>
+    <style>
+        #contenedor{
+            width: 25%;
+            background-color: #ffc;
+            margin: auto;
+            padding: 15px;
+        }
+    </style>
+    <script>
+        var nombre, edad, poblacion;
+                // nombre = prompt("Introduce tu nombre por favor", "Nombre");
+            do{        // A pesar de que "do while" es igual que while (aunque la condición se ejecuta al final), me permite ahorrar código
+                nombre = prompt("Introduce un nombre válido");
+            }while(!isNaN(nombre));
+                
+            do{
+                edad = prompt("Introduce una edad válida")
+            }while(edad<=0 || edad>105 || isNaN(edad));
+            
+        poblacion = prompt("Introduce tu población por favor", "Población");
+        while(!isNaN(poblacion)){
+                poblacion = prompt("Introduce una población válida");
+            }
+    </script>
+</head>
+<body>
+    <div id="contenedor">
+        <p>Nombre:
+            <script>
+                document.write(nombre);
+            </script>
+        </p>
+        <p>Edad:
+            <script>
+                document.write(edad);
+            </script>
+        </p>
+        <p>Población:
+            <script>
+                document.write(poblacion);
+            </script> 
+        </p>
+    </div>
+</body>
+</html>
