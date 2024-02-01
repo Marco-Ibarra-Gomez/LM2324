@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .centrado{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function dia_de_hoy(){
+            var hoy = new Date(); // "new Date()"" presenta una fecha
+            document.write(hoy.toDateString()); // El método ".toDateString" acorta la función anterior de new Date() colocando la fecha de una manera más sencilla
+        }
+    </script>
+</head>
+<body>
+    <h1 class="centrado"><strong>¿Y qué día es hoy?</strong></h1>
+
+    <p>Hoy es día: <script>dia_de_hoy();</script></p>
+    <p>Hemos dicho que hoy es día: <script>dia_de_hoy();</script></p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Trabajadores = new Array();
+        var persona = "";
+        var contador = 0;
+
+        while(persona!="salir"){
+            persona = prompt("Introduce trabajador");
+            Trabajadores[contador]=persona;
+            contador++;
+        }
+            Trabajadores.pop();
+        for(var i=0; i<Trabajadores.length; i++){
+            document.write(Trabajadores[i] + "<br>");
+        }
+
+    </script>
+</body>
+</html>

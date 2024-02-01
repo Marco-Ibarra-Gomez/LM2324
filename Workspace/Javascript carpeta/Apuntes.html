@@ -147,4 +147,24 @@ El <bucle> "For" es un bucle determinado que tiene la siguiente sintaxis:
         }
             // Continuación del programa
     </script>
-El bucle "for" se divide en las 3 zonas que aparecen en "()" llamadas inicio, condición y I/D.
+El bucle "for" se divide en las 3 zonas que aparecen en "()" llamadas inicio, condición y I/D. Este bucle se usa muchísimo en los arrays (a la hora de construir y leer  el array).
+
+Las <funciones> en JavaScript corresponden a las instrucciones que se le dan a un objeto por primera vez. La sintaxis de estas es de la siguiente manera:
+    <script>
+        function nombre_funcion(){ // El paréntesis se denomina zona de parámetros o zona de argumentos, y pueden estar vacios o contener información
+            // Código a ejecutar por la función (indicamos mediante la función unas instrucciones que memorizará la web, sin embargo, hasta que no llame a dicha función, esta no realizará su trabajo)
+        }
+
+            // En otro punto de la web llamamos a la función para que haga su trabajo
+        nombre_funcion();
+    </script>
+El argumento o parámetro de una función es algo adicional, y a veces opcional, que proporcionamos a la función para que esta pueda realizar correctamente su trabajo.
+    <script>
+        function suma(num1, num2){ // Una función puede recibir un único argumento o puede recibir varios siempre que se separen por ", (comas)"
+            var resultado=num1+num2;
+        }
+
+        // En otro punto de la página web llamamos a la función
+        suma(5,7); // Los argumentos num1 y num2 han cambiado por 5 y 7 (es decir, estos números se almacenan en los argumentos originales de la función como si hubieramos hecho "var num1 = 5" y "var num2 = 7"), respectivamente. De esta manera, al llamar a la función, cogerá los argumentos y realizará la operación resultado
+    </script>
+Esto que acabo de hacer (lo del 5 y el 7) se llama "Paso de parámetros".
