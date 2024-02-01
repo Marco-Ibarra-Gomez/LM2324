@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script>
+        var repetir = "si";
+        do{
+        function suma(num1, num2){
+            alert("La suma es " + (num1+num2));
+        }
+        function resta(num1, num2){
+            alert("La resta es " + (num1-num2));
+        }
+        function multiplica(num1, num2){
+            alert("La multiplicación es " + (num1+num2));
+        }
+        function divide(num1, num2){
+            alert("La división es " + (num1/num2));
+        }
+
+        var operacion = prompt("¿Qué operación deseas realizar? (sumar, restar, multiplicar o dividir)").toLowerCase();
+        var operador1 = parseInt(prompt("Introduce el primer número"));
+        var operador2 = parseInt(prompt("Introduce el segundo número"));
+
+        if(operacion=="sumar"){
+            suma(operador1, operador2);
+        }
+        else if(operacion=="restar"){
+            resta(operador1, operador2);
+        }
+        else if(operacion=="multiplicar"){
+            multiplica(operador1, operador2);
+        }
+        else if(operacion=="dividir"){
+            divide(operador1, operador2);
+        }
+        else{
+            alert("Lo siento, operación no contemplada");
+        }
+        repetir = prompt("¿Desea repetir? (Si/No)").toLowerCase();
+    }while(repetir=="si")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
