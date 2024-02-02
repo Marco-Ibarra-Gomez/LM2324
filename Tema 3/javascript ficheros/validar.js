@@ -50,8 +50,8 @@ function validarDNI(){
     var letraUsuario = cadena[8]; //Letra escrita por el usuario
     var letraReal = letra[numero%23]; // Letra real del dni claculada según fórmula
     var dniValido = true;
-    if(letraUsuario!=letraReal){ // Si no coincide, DNI falso
+    if(letraUsuario!=letraReal) // Si no coincide, DNI falso
         dniValido = false;
-    }
     return dniValido
+    
 }
