@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius a Farenheit</title>
+<script>
+    function convertir_a_farenheit(){
+        var celsius = parseInt(document.getElementById("grados_celsius").value);
+        var conversor_c = (celsius*(9/5)+32);
+        document.getElementById("conv_farenheit").innerHTML = ("La conversión da como resultado " + conversor_c + " grados Farenheit")
+    }
+
+    function convertir_a_celsius(){
+        var farenheit = parseInt(document.getElementById("grados_farenheit").value);
+        var conversor_f = ((farenheit-32)*(5/9));
+        document.getElementById("conv_celsius").innerHTML = ("La conversión da como resultado " + conversor_f + " grados Celsius")
+    }
+</script>
+</head>
+<body>
+    <head>
+        <h1>Conversor de temperatura</h1>
+    </head>
+    <label for="textbox">Celsius</label>
+        <input type="text" name="celsius" id="grados_celsius">
+        <button onclick = "convertir_a_farenheit()">Convertir a Farenheit</button>
+        <br><br>
+    <label for="">Farenheit</label>
+        <input type="text" name="farenheit" id="grados_farenheit">
+        <button onclick="convertir_a_celsius()">Convertir a Celsius</button>
+
+        <p id="conv_farenheit"></p>
+        <p id="conv_celsius"></p>
+</body>
+</html>

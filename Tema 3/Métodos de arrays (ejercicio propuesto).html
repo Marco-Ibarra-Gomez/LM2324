@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function agregar_elemento(){
+            var elemento = document.getElementById("array_p").value;
+            var array = [];
+            array.push(elemento);
+            document.getElementById("el_array").innerHTML = array;
+        }
+        function borrar_elemento(){
+
+        }
+    </script>
+</head>
+<body>
+    <head>
+        <h1>Array personal</h1>
+    </head>
+    <label for="elemento_">Elemento</label>
+        <input type="text" name="" id="array_p">
+        <button onclick="agregar_elemento()">Añadir</button>
+        <button onclick="">Eliminar último Elemento</button>
+        <p id="el_array"></p>
+</body>
+</html>
