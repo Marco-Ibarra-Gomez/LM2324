@@ -10,16 +10,16 @@
     <button id="boton" onclick="comprueba()">Probar!</button>
     <p id="resultado"></p>
 <script>
-    var numero=math.random;
+    var numero = Math.round(Math.random()*10);
     function comprueba() {
-    var entrada=document.getElementById("entrada").value;
+    var entrada = document.getElementById("entrada").value;
     if (entrada>numero){
         document.getElementById("resultado").innerHTML = "Lo siento, el número era menor...";
     }
     else if(entrada==numero){
         document.getElementById("resultado").innerHTML = "¡Acertaste!";
     }
-    else{
+    else if(entrada<numero){
         document.getElementById("resultado").innerHTML = "Lo sentimos, el número era mayor...";
     }
     }
