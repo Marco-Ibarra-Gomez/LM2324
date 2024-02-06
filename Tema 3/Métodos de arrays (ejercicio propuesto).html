@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+            var array = [];
+            var i;
         function agregar_elemento(){
             var elemento = document.getElementById("array_p").value;
-            var array = [];
             array.push(elemento);
-            document.getElementById("el_array").innerHTML = array;
+            for(i=0; i<array.length; i++){
+                document.getElementById("el_array").innerHTML += array[i] + ", " ;
+            }
         }
         function borrar_elemento(){
-
+            array.pop();
+            document.getElementById("el_array").innerHTML -= array[i] + ", "
         }
     </script>
 </head>
@@ -23,7 +27,7 @@
     <label for="elemento_">Elemento</label>
         <input type="text" name="" id="array_p">
         <button onclick="agregar_elemento()">Añadir</button>
-        <button onclick="">Eliminar último Elemento</button>
+        <button onclick="borrar_elemento()">Eliminar último Elemento</button>
         <p id="el_array"></p>
 </body>
 </html>
