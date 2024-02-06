@@ -6,11 +6,11 @@
     <title>Document</title>
     <script>
             var array = [];
-            var i;
+            let i = 0;
         function agregar_elemento(){
             var elemento = document.getElementById("array_p").value;
             array.push(elemento);
-            for(i=0; i<array.length; i++){
+            for(i; i<array.length; i++){
                 document.getElementById("el_array").innerHTML += array[i] + ", " ;
             }
         }
