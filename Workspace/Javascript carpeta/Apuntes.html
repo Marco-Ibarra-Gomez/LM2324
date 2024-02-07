@@ -168,3 +168,37 @@ El argumento o parámetro de una función es algo adicional, y a veces opcional,
         suma(5,7); // Los argumentos num1 y num2 han cambiado por 5 y 7 (es decir, estos números se almacenan en los argumentos originales de la función como si hubieramos hecho "var num1 = 5" y "var num2 = 7"), respectivamente. De esta manera, al llamar a la función, cogerá los argumentos y realizará la operación resultado
     </script>
 Esto que acabo de hacer (lo del 5 y el 7) se llama "Paso de parámetros".
+
+Ahora vamos a ver qué es <Jquery>:
+Esta es una librería de JS que ayuda con la creación de tareas frecuentes (seleccionar elementos, agregar nuevo contenido, ocultar y mostrar elementos, validar formularios, efectos visuales,...).
+Hay otras librerias aparte de Jquery.
+
+Entre las características de Jquery están:
+    - Es pequeña y ligera
+    - CSS friendly
+    - Ampliamente testeada
+    - Es gratis
+    - Gran comunidad de soporte
+    - Numerosos plugins
+
+Existen dos formas de agregar una libreria Jquery:
+    1.- Enlazando con un servidor que contenga a su vez Jquery.
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+    2.- Descargando tu propia copia de Jquery
+
+La estructura dentro del head (para agregar la libreria) es la siguiente:
+    <script src=""></script>
+    <script>
+        $(document).ready(function(){
+            // Aquí va tu código
+        });
+    </script>
+
+La forma reducida es de la siguiente manera:
+   <script> 
+    $(function(){
+        // Aquí va tu código
+    })
+        // IMPORTANTE: Este código ha de ir dentro del head, pero siempre después que el código CSS.
+    </script>
