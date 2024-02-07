@@ -48,7 +48,7 @@ function validarDNI(){
     var cadena = document.getElementById("dni").value; // DNI completo
     var numero = parseInt(cadena.substring(0, 8));
     var letraUsuario = cadena[8]; //Letra escrita por el usuario
-    var letraReal = letra[numero%23]; // Letra real del dni claculada según fórmula
+    var letraReal = letra[numero%23]; // Letra real del dni calculada según fórmula
     var dniValido = true;
     if(letraUsuario!=letraReal) // Si no coincide, DNI falso
         dniValido = false;

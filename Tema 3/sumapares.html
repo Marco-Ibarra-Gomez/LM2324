@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var array = [];
+        let i = 0;
+        function guardar(){
+            var elemento = ParseInt(document.getElementById("numeros").value);
+            array.push(elemento);
+            for(i; i<array.length; i++){
+                document.getElementById("numerosM").innerHTML += array[i] + ", ";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Array de números</h1>
+    </header>
+    <label for="">Números</label>
+    <input type="text" name="" id="numeros">
+    <button onclick="guardar()">Guardar en el array</button>
+    <br>
+    <p id="numerosM"></p><br>
+    <p id="resultado"></p>
+</body>
+</html>
