@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var array = [];
-        let i = 0;
+          var array = [];
+          var i;
         function guardar(){
-            var elemento = ParseInt(document.getElementById("numeros").value);
+            var elemento = parseInt(document.getElementById("numeros").value);
             array.push(elemento);
-            for(i; i<array.length; i++){
-                document.getElementById("numerosM").innerHTML += array[i] + ", ";
+            for(i=0; i<array.length; i++){
+                document.getElementById("numerosM").innerHTML = array;
+            }
+        }
+        function suma(){
+            var suma = 0;
+            for(i=0; i<array.length; i++){
+                if(array[i]%2 === 0){
+                suma += parseFloat(array[i]);
+                document.getElementById("resultado").innerHTML = suma;
+                }
             }
         }
     </script>
@@ -20,9 +29,10 @@
     <header>
         <h1>Array de números</h1>
     </header>
-    <label for="">Números</label>
-    <input type="text" name="" id="numeros">
+    <label for="numerossss">Números</label>
+        <input type="number" name="" id="numeros">
     <button onclick="guardar()">Guardar en el array</button>
+    <button onclick="suma()">Sumar pares</button>
     <br>
     <p id="numerosM"></p><br>
     <p id="resultado"></p>
