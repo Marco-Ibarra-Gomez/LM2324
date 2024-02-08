@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #aviso{
+            color: lightcoral;
+        }
+    </style>
+    <script src="/Tema 3/javascript ficheros/calificaciones.js"></script>
+</head>
+<body>
+    <h1>Calificaciones del ciclo</h1>
+    <label for="">Escribe tus calificaciones:</label>
+    <input type="text" id="numero" placeholder="Nota"><br><br>
+
+    <button onclick="añadir()">Añadir calificación</button>
+    <button onclick="borrar()">Borrar calificación</button>
+    <button onclick="calcularMedia()">Calcular media</button>
+    <p id="aviso"></p>
+    <p id="notas"></p> <!-- Aquí iré mostrando las calificaciones introducidas -->
+    <p id="resultado"></p> <!-- Aquí mostraré el resultado de las medias -->
+</body>
+</html>
