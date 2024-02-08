@@ -1,0 +1,32 @@
+Un output en javascript es un método para exponer datos de maneras diferentes.
+Los "outputs" de javascript son los siguientes:
+    1.- .innerHTML: Coge un elemento con un ID y lo cambia por un elemento HTML
+    2.- document.write(): Permite escribir en el documento (solo se usa para testear)
+    3.- window.alert(): Es un alert box para mostrar datos. Se puede omitir el window y solo escribir "alert()"
+    4.- console.log(): Este método se usa con propositos de depuración del código
+    5.- window.print(): Se usa para imprimir
+
+Lo siguiente son los Javascript "Keywords":
+    1.- var: declara una variable
+    2.- let: declara una variable de bloque
+    3.- const: declara una constante de bloque
+    4.- if: marca un bloque de declaraciones para ser ejecutado mediante una condición.
+    5.- switch: marca un bloque de declaraciones para ser ejecutado en diferentes casos.
+    6.- for: marca un bloque de declaraciones para ser ejecutado mediante un loop o bucle.
+    7.- function: declara una función.
+    8.- return: saca una función.
+    9.- try: Implementa el manejo de errores en un bloque de declaraciones.
+
+Cabe recalcar que las keywords son palabras reservadas, por lo que no se deben usar como nombres de variables.
+
+Por cierto, los guiones no están permitidos en JavaScript (por ejemplo: first-name). Están reservados para las restas.
+
+Ahora tocaría ver las "variables" en javascript:
+    1.- Automatically: las variables que son usadas por primera vez se declaran automáticamente.
+    2.- var: es un método para declarar variables usado en browsers antiguos. Solo se usa en caso de necesitar soporte para navegadores antiguos. Estas variables pueden ser re-declaradas. 
+        Re-declarar una variable dentro de un bloque acabará re-declarando la variable fuera del bloque (esto no sucede con let, sin embargo, let no se puede re-declarar en un mismo bloque).
+    3.- let: es un método igual que var, pero más actual. Solo se usa en caso de no poder usar "const". Tiene alcance de bloque. Además, no puede ser re-declarada en el mismo alcance.
+    4.- const: se usa para declarar variables que no cambian, es decir, mantienen un valor constante.
+
+Si no se entiende que es el alcance de bloque, hay dos tipos: Alcance global y alcance de función (esto ya se que es).
+

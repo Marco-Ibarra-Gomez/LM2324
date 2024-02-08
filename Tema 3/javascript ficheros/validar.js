@@ -52,6 +52,5 @@ function validarDNI(){
     var dniValido = true;
     if(letraUsuario!=letraReal) // Si no coincide, DNI falso
         dniValido = false;
-    return dniValido
-    
+    return dniValido   
 }
