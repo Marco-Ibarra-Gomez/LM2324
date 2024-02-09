@@ -27,6 +27,8 @@ Ahora tocaría ver las "variables" en javascript:
         Re-declarar una variable dentro de un bloque acabará re-declarando la variable fuera del bloque (esto no sucede con let, sin embargo, let no se puede re-declarar en un mismo bloque).
     3.- let: es un método igual que var, pero más actual. Solo se usa en caso de no poder usar "const". Tiene alcance de bloque. Además, no puede ser re-declarada en el mismo alcance.
     4.- const: se usa para declarar variables que no cambian, es decir, mantienen un valor constante.
+        Por cierto, al declarar const, esta tiene que ir de la manera (const PI = 3.14) y no de la manera (const PI; PI = 3,14). Es util declarar variables con const cuando se trata de (arrays, function, object y RegExp).
+        Por otra parte, en un array basado en const yo puedo cambiar los valores de un array constante, pero no puedo redeclarar un array con diferntes valores.
 
 Si no se entiende que es el alcance de bloque, hay dos tipos: Alcance global y alcance de función (esto ya se que es).
 
