@@ -32,3 +32,25 @@ Ahora tocaría ver las "variables" en javascript:
 
 Si no se entiende que es el alcance de bloque, hay dos tipos: Alcance global y alcance de función (esto ya se que es).
 
+Lo siguiente son los operadores de aritmética, asignación, etc...:
+    1.- (+): suma
+    2.- (-): resta
+    3.- (*): multiplicación
+    4.- (**): exponenciación. Da el mismo resultado que "Math.pow(x,y)".
+    5.- (/): división
+    6.- (%): Este operador llamado módulo da el resto que queda cuando un número (dividendo) se divide por otro número (divisor). Es util para hallar pares en un array.
+    7.- (++): incremento en 1
+    8.- (--): decremento en 1
+
+Lo siguiente son los operadores Tipo:
+    1.- typeof: devuelve el tipo de una variable
+    2.- instanceof: devuelve "True" en caso de que un objeto es un ejemplo de un tipo de objeto
+
+Lo siguiente son los operadores de asignación:
+    1.- (=): Este asigna un valor a una variable (let x = 10;)
+    2.- (+=): Este añade un valor a la variable, produciendo una suma de este nuevo valor con el anterior (let x = 10; x += 5; x = 15;). En el caso de una string, las concatena.
+    3.- (-=): Este es igual que el "+=", pero en vez de añadir un valor, lo resta.
+    4.- (*=): Igual que los de antes, pero los multiplica.
+    5.- (**=): Este eleva una variable al valor del operando (let x = 10; x **= 5; x = 10^5)
+    6.- (%=): Devuelve el resto de una variable siendo dividida por el operando
+
