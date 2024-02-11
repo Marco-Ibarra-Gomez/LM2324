@@ -54,3 +54,16 @@ Lo siguiente son los operadores de asignación:
     5.- (**=): Este eleva una variable al valor del operando (let x = 10; x **= 5; x = 10^5)
     6.- (%=): Devuelve el resto de una variable siendo dividida por el operando
 
+Lo siguiente son operadores pertenecientes a ES2020:
+    1.- (&&=): Este operador es usado entre dos valores. Si el primer valor es True, el segundo valor es asignado a la variable cambiando el primer valor "True" por el segundo.
+    2.- (||=): Es usado entre dos valores. Si el primer valor es "false", el segundo valor es asignado.
+    3.- (??=): Este operador es usado entre dos valores. En caso de que el primer valor sea nulo o no esté definido, el segundo valor será asignado a la variable.
+
+Ahora vamos con los tipos de datos:
+    1.- (string): Es una serie de carácteres escritos entre comillas ("", '') simples o dobles.
+    2.- (numbers): son numeros, que se escriben sin comillas.
+    3.- (notación exponencial): Se usa para grandes o pequeños números. Ej: 123e5 = 12300000
+    4.- (BigInt): Este es un nuevo tipo de dato usado para almacenar valores enteros que son demasiado grandes para ser representados por un número común en javascript
+    5.- (Booleans): Tiene dos valores, "True" o "False".
+    6.- 
+
