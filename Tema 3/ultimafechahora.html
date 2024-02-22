@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="texto"></p>
+    <script>
+        function cargar(){
+            let cadena = localStorage.getItem("ultimaFechaHora");
+            var hoy = new Date();
+            var ahora = hoy.toLocaleString();
+            if(cadena!=null){
+                // Se conectó alguna vez
+                document.getElementById("texto").innerHTML="Se conectó la última vez el día "+cadena;
+            }
+            else{
+                // Es la primera vez que se ha conectado
+                document.getElementById("texto").innerHTML="Hasta ahora mismo nunca te habías conectado";
+            }
+            localStorage.setItem("ultimaFechaHora", ahora);
+        }
+        window.onload=cargar();
+    </script>
+</body>
+</html>

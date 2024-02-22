@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="info" placeholder="Escribe algo">
+    <button onclick="guardar()">Guardar</button>
+    <button onclick="borrar()">Borrar</button>
+    <script>
+        function cargaPagina(){
+            let valor = localStorage.getItem("informacion");
+            if(valor!=null){
+                alert("Bienvenido " + valor)
+            }
+        }
+        function guardar(){
+            let info = document.getElementById("info").value;
+            localStorage.setItem("informacion",info); //Esto se usa para guardar información en una página web y que vuelva a aparecer en caso de volver a cargar la página
+        }
+        function borrar(){
+            localStorage.clear(); // Esto permite borrar el localStorage tras usar la función
+        }
+        window.onload = cargaPagina(); // Esto permite cargar una función antes de mostrar la web
+    </script>
+</body>
+</html>
