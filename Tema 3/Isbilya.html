@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Isbilya</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+ <table cellpadding="0">
+     <h1>Isbilya</h1>
+  <tr>
+    <td width="100%"><img src="s1.jpg" id="fotoActual"></td>
+  </tr>
+  <tr>
+    <td width="100%">
+    <form>
+      <div>
+          <input type="button" value="Atrás" onClick="anterior()">
+          <input type="button" value="Siguiente" onClick="posterior()">
+          <br>
+      
+        </div>
+    </form>
+    </td>
+  </tr>
+</table>  
+          <script>
+            var foto=new Array();
+            var indice=0;
+            var fotos_totales;
+            foto[0]="s0.jpg";
+            foto[1]="s1.jpg";
+            foto[2]="s2.jpg";
+            foto[3]="s3.jpg";
+            foto[4]="s4.jpg";
+            function anterior(){
+                if(indice>0){
+                    indice=indice-1;
+                }
+                else{
+                    indice= fotos.length -1 ;       
+                }
+                document.getElementById("fotoActual").src = "s"+indice+".jpg";
+            }
+            function posterior(){
+                fotos_totales = fotos.length;
+                if (indice==fotos_totales-1){
+                    indice=0;
+                }
+                else{
+                    indice=indice+1;        
+                }
+                document.getElementById("fotoActual").src ="s"+indice+".jpg";
+            }
+</script>
+        
+</body>
+</html>
