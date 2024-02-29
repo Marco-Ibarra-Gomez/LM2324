@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function guardarTareas(){
+            localStorage.setItem('tareas', JSON.stringify(tareas));
+        }
+        
+        function cargarTareas(){
+            const tareas = JSON.parse(localStorage.getItem('tareas'));
+            if(tareas){
+                const lista = document.getElementById('listaTareas');
+                tareas.forEach()
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
