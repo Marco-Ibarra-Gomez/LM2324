@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Encabezado 1</h1>
+    <h1>Encabezado 1</h1>
+    <h2>Encabezado 2</h2>
+    <p>Lorem ipsum dolor <a href="http://" target="_blank" rel="noopener noreferrer">sit amet</a> consectetur adipisicing elit. Ipsam quam unde perferendis rerum nostrum corporis nemo praesentium voluptatibus. Velit qui perspiciatis non nostrum aliquid optio ipsum obcaecati distinctio alias modi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti quis mollitia officia, aliquam, nulla laborum quibusdam ratione voluptatibus molestiae, praesentium nemo nobis facilis. Quos voluptates alias autem repudiandae non!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ut eius ad quo distinctio a nemo fugiat omnis, corrupti tenetur impedit, beatae consectetur fuga? Porro saepe iste quo. Neque, odit.</p>
+    <img src="https://qph.cf2.quoracdn.net/main-qimg-5641f0ec8f58ff5b1e48e17adc858a7a-lq" alt="Foto">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ex facilis fuga, similique natus iure excepturi nobis est numquam deserunt aliquid, amet quibusdam sed architecto non laboriosam? Aliquam, fuga expedita.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique quis ea saepe earum ad, enim ullam nostrum exercitationem quidem dolore qui totam! Illo, recusandae illum reprehenderit necessitatibus quibusdam enim blanditiis!</p>
+    <table>
+        <tr>
+            <th>Encabezados</th>
+            <th>Párrafos</th>
+            <th>Enlaces</th>
+            <th>Imágenes</th>
+        </tr>
+        <tr>
+            <td id="enc">
+                
+            </td>
+            <td id="par">
+                
+            </td>
+            <td id="enl">
+                
+            </td>
+            <td id="img">
+                
+            </td>
+        </tr>
+    </table>
+    <script>
+        $(document).ready(function(){
+            $("#enc").html(
+                $("h1,h2").length
+            );
+            $("#par").html(
+                $("p").length
+            );
+            $("#enl").html(
+                $("a").length
+            );
+            $("#img").html(
+                $("img").length
+            );
+        });
+    </script>    
+</body>
+</html>
